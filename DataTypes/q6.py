@@ -7,3 +7,9 @@ Sample String : 'The lyrics is not that poor!'
 Expected Result : 'The lyrics is good!'
 'The lyrics is poor!'
 '''
+
+string=str(input('Enter the string?'))
+if 'not' in string and 'poor' in string and string.find('not') < string.find('poor'):
+    string.replace('not','')
+    string.replace('poor','good')
+print(string)
